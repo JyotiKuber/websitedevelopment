@@ -1,0 +1,481 @@
+/* Colours used : 
+#f79e2a
+#0098b1
+#e6421f
+#523c34
+
+*/
+
+
+/* Default Settings */ 
+ 
+ * { 
+    box-sizing: border-box; 
+    margin: 0 auto; 
+    padding: 0; 
+} 
+ 
+body { 
+    width: 100vw;
+    max-width: 100%;
+    
+    font-size: 16px; 
+    font-family: 'Fredoka', sans-serif;    
+    background-color: #ffff;
+     
+} 
+ 
+li { 
+    list-style-type: none; 
+} 
+ 
+
+
+/* ------------------------------------------------------- */ 
+
+/* CSS for Header including Navigation */ 
+ 
+header { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    position: sticky; 
+    top: 0; 
+    background-color: #ffffff; 
+    z-index: 99999; 
+} 
+ 
+
+.main-nav { 
+    width: 100%; 
+    padding: 1rem; 
+    background-repeat: no-repeat;
+     
+    margin: 0px auto;
+    max-width: 1000px;
+}
+    
+
+ 
+.main-ul { 
+    height: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: flex-end; 
+} 
+ 
+.main-li { 
+    padding: 0 2rem; 
+} 
+ 
+.main-li a { 
+    text-decoration: none; 
+    font-weight: bold; 
+ 
+    color: #e6421f; 
+} 
+ 
+.main-li a:hover { 
+    border-bottom: 2px solid #0098B1; 
+} 
+
+
+@media   (max-width : 1000px)
+{
+    .main-ul{
+        flex-direction: column;
+    }
+    
+    
+} 
+     
+         
+         
+
+/* ------------------------------------------------------------------------ */ 
+
+/* CSS for home.html */ 
+ 
+#home { 
+    position: relative; 
+    width: 100%; 
+    height: 70vh; 
+    background-color: #ffffff; 
+    background-image: url(../images/front1.jpg); 
+    background-position:  center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+} 
+
+ 
+.home-header { 
+     position: absolute; 
+     top: 20%; 
+     right: 5%; 
+    word-wrap: break-word; 
+    font-size: 2rem; 
+    font-family: 'Fredoka', cursive;
+    color: #000000;
+    text-align: center;
+     
+   
+} 
+.home-image{
+    position: relative; 
+    width: 100%; 
+    height: 70vh; 
+    background-color: #ffffff; 
+    background-image: url(../images/front2.jpg); 
+    background-position:  center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+ 
+
+.conta { 
+    position: absolute; 
+    top: 35%; 
+    right: 10vw; 
+    padding: 0.35rem 1.2rem; 
+    font-size: 1.25rem; 
+    border: 0.15rem solid #ffffff; 
+    border-radius: 5px; 
+    background-color: #0098b1; 
+    color: #ffffff; 
+    cursor: pointer; 
+} 
+
+
+ 
+
+/* ------------------------------------------------------------ */ 
+
+ /* CSS for Cafe */
+
+.menu { 
+    position: absolute; 
+    top: 25%; 
+    left: 25vw; 
+    padding: 0.35rem 1.2rem; 
+    font-size: 1.25rem; 
+    border: 0.15rem solid #000000; 
+    border-radius: 5px; 
+    background-color: #e6421f; 
+    color: #ffffff; 
+    cursor: pointer; 
+} 
+
+
+ 
+
+/* CSS for gallery.html */ 
+ 
+#gallery { 
+    width: 100%; 
+} 
+ 
+.photos { 
+    display: flex; 
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: center; 
+    
+} 
+ 
+.photo  { 
+    margin: 1rem; 
+    border: 3px solid #000000; 
+    max-width: 30vw; 
+    display: flex;
+    
+    
+}
+
+ 
+.gallery-header { 
+    width: 100%; 
+    text-align: center; 
+    padding: 1rem 0; 
+    font-size: 2rem; 
+     color: #0098b1;
+} 
+.gallery-desc{
+    text-align: center; 
+    font-size: 1rem; 
+    display: flex; 
+    top: 25%;
+    left: 10%;
+    
+}
+
+/* -------------------------------------------------------------- */ 
+ /* CSS for shop.htm */ 
+ 
+#shops { 
+    position: relative; 
+    width: 100%; 
+    height: 70vh; 
+    background-color: #ffffff;
+    background-image: url(../images/shop14.jpg);
+    background-position:  center; 
+    background-repeat: no-repeat; 
+    background-size: cover;     
+    
+    
+} 
+ 
+.shops-header { 
+    position: absolute; 
+    top: 5%; 
+    right: 5%; 
+    font-size:2rem; 
+    text-align: center;
+    color: #ffffff; 
+} 
+ 
+.shops-text { 
+    position: absolute; 
+    top: 30%; 
+    left: 15%; 
+    width: 515px; 
+    font-size: 1.5rem; 
+    text-align: center; 
+    color: #ffffff;
+} 
+ 
+
+.shops { 
+    width: 100%; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 1rem 0; 
+    margin-top: 0; 
+    background-color: #ffffff; 
+} 
+.shop { 
+    width: 80%; 
+    display: flex; 
+    flex-direction: row; 
+    margin: 1rem; 
+} 
+.shop-image, .shop-content { 
+    width: 50%; 
+    padding: 1rem; 
+} 
+.shop-image img { 
+    width: 80%; 
+    box-shadow: 5px 10px 5px rgba(0,0,0,.5); 
+} 
+.shop-content { 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+} 
+.shop-content p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+ 
+.shop-title { 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #0098b1; 
+} 
+ 
+.shop-desc { 
+    text-align: justify; 
+    font-size: 1rem; 
+} 
+ 
+/* ------------------------------------------------------------- */ 
+
+
+
+ 
+/* CSS for findus.html */ 
+ 
+#form { 
+    width: 70%;  
+    padding: 1rem 0;   
+    background-color: #ffffff;
+} 
+ 
+.form-header { 
+    width: 100%; 
+    color: #0098b1;
+    text-align: center ;     
+    font-size: 2rem; 
+    padding-bottom: 1rem; 
+} 
+.form-header2{
+    width:100%;
+    color : #000000;
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+ 
+#contact-form { 
+    background-color: #ffffff; 
+    color: #000000;
+    width: 100%; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+} 
+
+label, input, select, textarea { 
+    padding: 0.5rem; 
+    width: 90%; 
+} 
+ 
+ 
+input:not(:placeholder-shown) { 
+    padding: 1rem 0.5rem; 
+    font-size: 1.25rem; 
+} 
+ 
+
+ 
+input[type=submit] { 
+    margin: 1rem 0; 
+    padding: 0.5rem; 
+    width: 50%; 
+    border-radius: 10px; 
+    background-color: #e6421f; 
+    color: #ffffff;     
+    font-weight: bold; 
+    font-size: 1.25rem; 
+} 
+ 
+label { 
+    font-size: 1rem; 
+    font-weight: bold; 
+} 
+ 
+
+iframe {
+    width: 50%;
+    margin: 20px auto;
+    display: block;
+}
+/* ------------------------------------------------ */ 
+ 
+
+/* CSS for Plan Your Visit*/
+
+ 
+#trail { 
+    position: relative; 
+    width: 100%; 
+    height: 60vh; 
+    background-color: #ffffff; 
+    background-image: url(../images/trail1.jpg); 
+    background-position:  center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+} 
+
+ 
+.trail-header { 
+     position: absolute; 
+     top: 40%; 
+     right: 25%; 
+    word-wrap: break-word; 
+    font-size: 2rem; 
+    font-family: 'Fredoka', cursive;
+    color: #ffffff;
+    text-align: center;
+     
+   
+} 
+
+
+ 
+/* CSS for Footer */ 
+ 
+footer { 
+    width: 100%; 
+    background-color: #F79E2A; 
+    display: flex; 
+    flex-direction: row; 
+    color: #523c34; 
+} 
+ 
+.sitemap, .social, .contact { 
+    width: calc(100% /3); 
+    padding: 1rem; 
+    display: flex; 
+     word-wrap: break-word; 
+    align-items: center; 
+    justify-content: center;     
+} 
+ 
+.sitemap, .contact { 
+    flex-direction: column; 
+} 
+ 
+.social { 
+    flex-direction: row; 
+} 
+ 
+.fab { 
+    font-size: 1.5rem; 
+    padding: 0 0.5rem; 
+    color:  #523c34; 
+
+} 
+ 
+.fa-facebook-square:hover { 
+    color: #4267B2; 
+} 
+  
+.fa-twitter-square:hover { 
+    color: #38A1F3; 
+} 
+ 
+.fa-instagram-square:hover { 
+    color: #405de6; 
+} 
+ 
+.footer-li { 
+    width: 150px; 
+    text-align: center; 
+} 
+ 
+.footer-li a {  
+    color: #523c34; 
+    text-decoration: none; 
+    font-size: 0.80rem; 
+    padding: 0.1rem 0;
+} 
+ 
+.footer-li:hover { 
+    border-left: 2px solid #ffffff;     
+    border-right: 2px solid #ffffff; 
+} 
+ 
+.footer-header { 
+    font-size: 1.5rem; 
+    padding-bottom: 0.25rem; 
+    text-align: center;
+} 
+ 
+.footer-text { 
+    
+    font-size: 0.80rem; 
+    text-align: center;
+     word-wrap: break-word; 
+} 
+ 
+/* ----------------------------------------------------------- */ 
+ 
+    
+
